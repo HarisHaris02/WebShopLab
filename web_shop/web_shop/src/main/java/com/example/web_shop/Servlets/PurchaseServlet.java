@@ -20,7 +20,6 @@ public class PurchaseServlet extends HttpServlet {
         UserInfo userInfo = (UserInfo) session.getAttribute("user");
 
         if (userInfo != null) {
-            // Remove clearCart method call
             response.sendRedirect("confirm.jsp");
         } else {
             response.sendRedirect("login.jsp");
